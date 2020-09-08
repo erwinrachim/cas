@@ -5,6 +5,12 @@
  * Licence: MIT
  ***********************************/
 
+/***********************************
+ * Edited By: Erwin
+ * Date: 8/9/20
+ * Licence: MIT
+ ***********************************/
+
 if ( ! function_exists('cas')) {
     /**
      * Initiate CAS hook.
@@ -14,5 +20,17 @@ if ( ! function_exists('cas')) {
     function cas()
     {
         return app('cas');
+    }
+}
+
+if (!function_exists('cas_citizen')) {
+    /**
+     * Initiate CAS hook.
+     *
+     * @return \Subfission\Cas\CasManager
+     */
+    function cas_citizen()
+    {
+        return app('cas_citizen');
     }
 }
