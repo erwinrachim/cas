@@ -34,6 +34,10 @@ class CasServiceProvider extends ServiceProvider
         $this->app->singleton('cas', function () {
             return new CasManager( config('cas') );
         });
+        
+         $this->app->singleton('cas_citizen', function () {
+            return new CasManager(config('cas_citizen'));
+        });
     }
 
     /**
